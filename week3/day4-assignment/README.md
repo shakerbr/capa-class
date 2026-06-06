@@ -56,6 +56,7 @@ I'll consider adding a table named order_details(or order_meal).
 | order_id | int      |
 | meal_id  | int      |
 | quantity | int      |
+
 This table allows each order to have as many meals they're being requested, and records the quantity for each meal. 
 
 now the order table will be as following:
