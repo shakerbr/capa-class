@@ -1,0 +1,19 @@
+GET http://localhost:3931/
+
+
+### Students
+
+GET http://localhost:3931/students
+
+
+###
+
+
+POST http://localhost:3931/students HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Essa",
+    "gender": "m",
+    "courseID": 2
+}
