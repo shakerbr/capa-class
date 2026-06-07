@@ -10,11 +10,8 @@ GET http://localhost:3931/students
 GET http://localhost:3931/students/60
 
 
-<<<<<<< HEAD
 ### POST request
 
-=======
->>>>>>> 2915b09a907a6b926a930651aea882c8d54514a2
 POST http://localhost:3931/students
 Content-Type: application/json
 
@@ -23,7 +20,6 @@ Content-Type: application/json
     "gender": "m",
     "courseID": 2
 }
-<<<<<<< HEAD
 
 ### PUT request
 
@@ -48,5 +44,3 @@ Content-Type: application/json
 ### DELETE request
 
 DELETE  http://localhost:3931/students/16
-=======
->>>>>>> 2915b09a907a6b926a930651aea882c8d54514a2
