@@ -18,6 +18,8 @@ connection.connect((err) => {
 const server = express();
 server.set("json spaces", 2);
 
+
+// GET 
 server.get("/", (req, res) => {
     res.send(`
         <!DOCTYPE html>
@@ -57,12 +59,13 @@ server.get("/students/:id", (req, res) => {
             if (result.length > 0) {
                 res.json(result[0])
             } else {
-                res.status(404).send("404<br>Student Not Found")
+                res.status(404).send(result)
             }
         }
     })
 });
 
+// POST
 server.post("/students", express.json(), (req, res) => {
     const {name, gender, courseID} = req.body;
     connection.query(
@@ -78,6 +81,67 @@ server.post("/students", express.json(), (req, res) => {
         }
     )
 })
+
+// PUT
+server.put("/students/:id", express.json(), (req, res) => {
+    const studentID = req.params.id;
+    const {name, gender, courseID} = req.body;
+    connection.query("UPDATE students SET name = ?, gender = ?, course_id = ? WHERE id = ?;", [name, gender, courseID, studentID], (err, result) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send("Error in Database");
+        } else {
+            if (result.affectedRows) {
+                if (result.changedRows){
+                    res.send(`Your data has been updated successfully \nName: ${name} \nGender: ${gender} \nCourse ID: ${courseID}`);
+                } else {
+                    res.send("Data is already up to date");
+                }
+            } else {
+                res.status(404).send('Student not found');
+            }
+        }
+    })
+});
+
+// PATCH
+server.patch("/students/:id", express.json(), (req, res) => {
+    const studentID = req.params.id;
+    const {courseID} = req.body;
+    connection.query("UPDATE students SET course_id = ? WHERE id = ?;", [courseID, studentID], (err, result) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send("Error in Database");
+        } else {
+            if (result.affectedRows) {
+                if (result.changedRows){
+                    res.send(`Your data has been updated successfully \nCourse ID: ${courseID}`);
+                } else {
+                    res.send("Data is already up to date");
+                }
+            } else {
+                res.status(404).send('Student not found');
+            }
+        }
+    })
+});
+
+// DELETE
+server.delete("/students/:id", (req, res) => {
+    const studentID = req.params.id;
+    connection.query("DELETE FROM students WHERE id = ?;", [studentID], (err, result) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send("Error in Database");
+        } else {
+            if (result.affectedRows) {
+                res.send(`User with ID=${studentID} Deleted`);
+            } else {
+                res.status(404).send('Student not found');
+            }
+        }
+    })
+});
 
 const serverport = 3931;
 server.listen(serverport, () => {
