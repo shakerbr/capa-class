@@ -10,9 +10,24 @@ GET http://localhost:3931/students
 GET http://localhost:3931/students/60
 
 
+<<<<<<< HEAD
 ### POST request
 
-POST http://localhost:3931/students HTTP/1.1
+=======
+>>>>>>> 2915b09a907a6b926a930651aea882c8d54514a2
+POST http://localhost:3931/students
+Content-Type: application/json
+
+{
+    "name": "Suliman",
+    "gender": "m",
+    "courseID": 2
+}
+<<<<<<< HEAD
+
+### PUT request
+
+PUT http://localhost:3931/students/3
 Content-Type: application/json
 
 {
@@ -20,3 +35,18 @@ Content-Type: application/json
     "gender": "m",
     "courseID": 2
 }
+
+### PATCH request
+
+PATCH  http://localhost:3931/students/3
+Content-Type: application/json
+
+{
+    "courseID": 1
+}
+
+### DELETE request
+
+DELETE  http://localhost:3931/students/16
+=======
+>>>>>>> 2915b09a907a6b926a930651aea882c8d54514a2
