@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <Header/>
-      <div className="body">
+      <main>
         <h2>Welcoem to React!</h2>
-      </div>
+      </main>
       <Footer/>
     </>
   )

@@ -4,9 +4,7 @@ const Footer = () => {
   return (
     <>
         <footer>
-            <small>Made with 🎔 by Shaker Br.</small>
-            <br></br>
-            <small>&copy; CAPA 2026</small>
+            <small>Made with 🎔 by Shaker Br. <br></br> &copy; CAPA 2026</small>
         </footer>
     </>
   )
