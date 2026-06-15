@@ -1,1 +1,14 @@
-GET http://localhost:3931
+### /
+GET http://localhost:3000/
+
+### /student
+GET http://localhost:3000/student
+
+### /about
+GET http://localhost:3000/about
+
+### /skills
+GET http://localhost:3000/skills
+
+### /students
+GET http://localhost:3000/students

@@ -58,3 +58,29 @@ Now we create an api request file to test the api(root)
 ```http
 GET http://localhost:3000
 ```
+
+### Step 6 - Creating Other Routes
+In this step, we create the remaining routes:
+- student 
+- about
+- skills
+- students
+
+### Step 7 (Final) - Ensure All Routes are Working
+Testing all the routes:
+```https
+### /
+GET http://localhost:3000/
+
+### /student
+GET http://localhost:3000/student
+
+### /about
+GET http://localhost:3000/about
+
+### /skills
+GET http://localhost:3000/skills
+
+### /students
+GET http://localhost:3000/students
+```
