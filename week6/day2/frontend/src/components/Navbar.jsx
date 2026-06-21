@@ -21,6 +21,12 @@ function Navbar() {
         >
             Contact
         </Link>
+        <Link 
+            to="/login"
+            className='transition-all duration-300 hover:underline' 
+        >
+            Login
+        </Link>
     </nav>
   );
 }
