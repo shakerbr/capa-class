@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducing JS</title>
+    
+    <script>
+        // Popup to tell the user to take caution.
+        // alert("Take caution browsing this page.");
+        const proceed = confirm("Do you want to proceed?");
+
+        if (proceed) {
+            alert("Be careful browsing this page.");
+        } else {
+            history.back();
+        }
+    </script>
+</head>
+
+<body>
+    <header style="position: fixed; top: 0; left: 0; padding: 5px 5%; width: 90%;">
+        <nav style="background-color: #007fff; padding: 5px 20px; border-radius: 50px;">
+            <a href="/index.html" style="color: white; text-decoration: none; font-weight: bold;">Back to Dashboard</a>
+        </nav>
+    </header>
+
+    <h1>Title</h1>
+    <p>Parahraph</p>
+    <p>Paragraph 2</p>
+
+    <section>
+        <h1>Title</h1>
+        <p>Parahraph</p>
+        <p>Paragraph 2</p>
+    </section>
+</body>
+
+</html>

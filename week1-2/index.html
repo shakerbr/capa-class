@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaker's Workspace</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Shaker's Workspace</h1>
+        <nav style="padding: 0.5em; border: solid gray;">
+            <h2 style="margin: 0.5em 1em ;">Current projects</h2>
+            <div id="projects-nav" style="margin-top: 0.5em;"></div>
+             <script>
+               fetch('/projects.json')
+                 .then(r => r.json())
+                 .then(groups => {
+                   const container = document.getElementById('projects-nav');
+                   if (!groups.length) return;
+                    var day = groups.length;
+                   groups.forEach(group => {
+                     const heading = document.createElement('h3');
+                     heading.textContent = `Week ${Math.ceil(day / 4)} Day ${day} - ${group.date}`;
+                     day--;
+                     heading.style.margin = '0px 0em 5px 2em';
+                     container.appendChild(heading);
+
+                     const ul = document.createElement('ul');
+                     ul.style.marginLeft = '2em';
+                     ul.style.marginTop = '0';
+                     group.projects.forEach(p => {
+                       const li = document.createElement('li');
+                       const a = document.createElement('a');
+                       a.href = p.path;
+                       a.textContent = p.name;
+                       li.appendChild(a);
+                       ul.appendChild(li);
+                     });
+                     container.appendChild(ul);
+                   });
+                 })
+                 .catch(() => {});
+             </script>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About The dashboard</h2>
+            <p>This is the Dashboard page of Shaker's Workspace, and will be used as a hub for everyting I build in this course.</p>
+        </section>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Navigation in the top</li>
+                <li>All projects in one place.</li>
+                <li>Easily go back to the dashboard</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Built with 💙 by Shaker.</p>
+    </footer>
+</body>
+</html>

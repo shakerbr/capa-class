@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Artboard_5-6" data-name="Artboard 5-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <path d="M115,333.29v413.43c0,23.92,12.76,46.03,33.48,57.99l358.04,206.71c20.72,11.96,46.24,11.96,66.96,0l358.04-206.71c20.72-11.96,33.48-34.07,33.48-57.99v-413.43c0-23.92-12.76-46.03-33.48-57.99l-358.04-206.71c-20.72-11.96-46.24-11.96-66.96,0l-358.04,206.71c-20.72,11.96-33.48,34.07-33.48,57.99Z"/>
+  <g>
+    <g>
+      <polygon points="539.94 958.33 902.35 749.24 902.35 330.76 539.94 121.67 177.52 330.76 177.52 749.24 539.94 958.33" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+      <polygon points="358.79 435.28 539.94 330.83 721.09 435.28 721.09 644.72 539.94 749.17 358.71 644.58 358.79 435.28" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+    </g>
+    <g>
+      <line x1="539.94" y1="540" x2="539.94" y2="958.33" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+      <line x1="539.94" y1="540" x2="177.65" y2="749.17" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+      <line x1="539.94" y1="540" x2="177.65" y2="330.83" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+      <line x1="539.94" y1="540" x2="539.94" y2="121.67" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+      <line x1="539.94" y1="540" x2="902.22" y2="330.83" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+      <line x1="539.94" y1="540" x2="902.22" y2="749.17" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+    </g>
+  </g>
+  <g>
+    <line x1="177.52" y1="330.76" x2="539.94" y2="330.83" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+    <line x1="539.94" y1="121.67" x2="721.09" y2="435.28" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+    <line x1="902.35" y1="330.76" x2="721.09" y2="644.72" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+    <line x1="902.35" y1="749.24" x2="539.94" y2="749.17" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+    <line x1="539.94" y1="958.33" x2="358.71" y2="644.58" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+    <line x1="177.52" y1="749.24" x2="358.79" y2="435.28" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+  </g>
+  <g>
+    <circle cx="539.9" cy="539.91" r="33.46" fill="#fff"/>
+    <circle cx="361.02" cy="436.63" r="33.46" fill="#fff"/>
+    <circle cx="718.79" cy="436.63" r="33.46" fill="#fff"/>
+    <circle cx="539.9" cy="746.47" r="33.46" fill="#fff"/>
+    <circle cx="718.86" cy="643.19" r="33.46" fill="#fff"/>
+    <circle cx="539.9" cy="333.34" r="33.46" fill="#fff"/>
+    <circle cx="361.02" cy="643.19" r="33.46" fill="#fff"/>
+  </g>
+  <g>
+    <circle cx="539.94" cy="540" r="37.65" fill="#fff"/>
+    <circle cx="177.65" cy="330.83" r="37.65" fill="#fff"/>
+    <circle cx="902.22" cy="330.83" r="37.65" fill="#fff"/>
+    <circle cx="539.94" cy="958.33" r="37.65" fill="#fff"/>
+    <circle cx="902.35" cy="749.17" r="37.65" fill="#fff"/>
+    <circle cx="539.94" cy="121.67" r="37.65" fill="#fff"/>
+    <circle cx="177.65" cy="749.17" r="37.65" fill="#fff"/>
+  </g>
+</svg>

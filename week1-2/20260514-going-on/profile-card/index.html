@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header style="position: fixed; top: 0; left: 0; padding: 5px 5%; width: 90%;">
+        <nav style="background-color: #007fff; padding: 5px 20px; border-radius: 50px;">
+            <a href="/index.html" style="color: white; text-decoration: none; font-weight: bold;">Back to Dashboard</a>
+        </nav>
+    </header>
+
+    <div class="profile-card">
+        <img src="assets/images/spiderman.png" alt="Profile Picture" class="profile-img">
+        <h2 class="profile-name">Peter Parker</h2>
+        <h3 class="profile-position">Super Hero</h3>
+        <p class="profile-details">Call whenever you need to be rescued.</p>
+        <button class="profile-btn" id="call">Call</button>
+    </div>
+
+    <div class="popup-overlay" id="popup">
+        <div class="popup">
+            <img src="assets/images/spiderman.png" alt="Profile" class="popup-img">
+            <h3 class="popup-name">Peter Parker</h3>
+            <p class="popup-status">Calling...</p>
+            <button class="popup-hangup" id="hangup">Hangup</button>
+        </div>
+    </div>
+
+</body>
+    <script src="script/main.js"></script>
+</html>
