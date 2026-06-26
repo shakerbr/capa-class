@@ -17,3 +17,6 @@ Welcome! You'll find most of my work here.
 - Classwork: [server, requests, and packages](week4)
 
 #### Assignment: [Student Information API](week4/assignment)
+
+---
+*Last updated: 2026-06-26*
