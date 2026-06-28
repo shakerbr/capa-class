@@ -5,20 +5,6 @@ function Dashboard() {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
 
-  if (!isLoggedIn()) {
-    return (
-      <div className="text-red-500 text-center mt-8">
-        You must be logged in to view the dashboard.
-        <a
-          href="/login"
-          className="text-blue-500 underline ml-2"
-        >
-          Log in
-        </a>
-      </div>
-    );
-  }
-
   useEffect(() => {
     async function fetchUsers() {
       try {
@@ -49,6 +35,20 @@ function Dashboard() {
 
   if (error) {
     return <div className="text-red-500 text-center mt-8">{error}</div>;
+  }
+
+  if (!isLoggedIn()) {
+    return (
+      <div className="text-red-500 text-center mt-8">
+        You must be logged in to view the dashboard.
+        <a
+          href="/login"
+          className="text-blue-500 underline ml-2"
+        >
+          Log in
+        </a>
+      </div>
+    );
   }
 
   return (
