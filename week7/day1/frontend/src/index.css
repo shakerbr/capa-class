@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: white;
+  --color-text: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: black;
+    --color-text: white;
+  }
+}
+
+html {
+  color-scheme: light dark;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* * {
+  outline: 1px solid;
+} */
