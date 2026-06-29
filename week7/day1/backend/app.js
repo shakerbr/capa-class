@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
 // Register
 app.post("/register", async (req, res) => {
   const { name, email, password, birthDate } = req.body;
-
+  
   if (!name || !email || !password) {
     res.status(400).json({error: "name, email, and password are required."})
     return
